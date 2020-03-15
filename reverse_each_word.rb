@@ -1,21 +1,7 @@
-def reverse_each_word(string)
-  nustring = string.split(" ")
-  reversed = []
   
-  nustring.each do |phrase|
-    reversed << phrase.reverse
-  end
-  
-  return reversed.join(" ")
-  
-end
-
-def reversed_each_word(string)
-  
-  nustring = string.split(" ")
-  reversed = []
-  reversed = nustring.collect { |phrase| phrase.reverse}
-  
-  return reversed.join(" ")
-  
+def reverse_each_word(sentence)
+  words_array = sentence.split(" ")
+  new_array = []
+  new_array = words_array.collect {|word| word.reverse }
+  new_array.join(" ")
 end
